@@ -1,0 +1,54 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	font-family: system-ui;
+}
+
+/* Root - Paleta de Colores */
+
+:root
+{
+	--c-white: rgba(255, 255, 255, 1);
+	--c-black: rgba(0, 0, 0, 1);
+	--c-gray: rgba(25, 25, 24, 1);
+	--c-grayWhite: rgba(40, 40, 40, 1);
+	--c-yellow: rgba(255, 237, 73, 1);
+	--c-orange: rgba(255, 146, 73, 1);
+}
+
+/* Etiquetas  */
+
+body
+{
+	background: -o-linear-gradient(315deg, var(--c-orange), var(--c-yellow));
+	background: linear-gradient(135deg, var(--c-orange), var(--c-yellow));
+	background-attachment: fixed;
+}
+
+/* Contenedor  */
+
+.container
+{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	border-radius: 10px;
+	width: 85%;
+	height: 85%;
+	padding: 0;
+	background-color: var(--c-white);
+	margin: 1.5%  auto 0;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-transition: .6s all ease;
+	-o-transition: .6s all ease;
+	transition: .6s all ease;
+}
